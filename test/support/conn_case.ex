@@ -27,6 +27,8 @@ defmodule Rumbl.ConnCase do
 
       import Rumbl.Router.Helpers
 
+      import Rumbl.TestHelpers
+      
       # The default endpoint for testing
       @endpoint Rumbl.Endpoint
     end
@@ -41,4 +43,5 @@ defmodule Rumbl.ConnCase do
 
     {:ok, conn: Phoenix.ConnTest.build_conn()}
   end
+
 end
